@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 1.5rem 0;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.nav__img {
+  height: 26px;
+  width: 26px;
+}
+
+.menuMobile {
+  position: absolute;
+  right: 0;
+  top: 70px;
+  height: auto;
+}
+
+.menuDesktop {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (min-width: 720px) {
+  .header {
+    justify-content: unset;
+    gap: 2rem;
+  }
+
+  .nav__menu,
+  .menuMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .menuDesktop {
+    display: none;
+  }
+}

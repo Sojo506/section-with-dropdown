@@ -1,0 +1,15 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 1px;
+}
+
+.footer p {
+  text-align: center;
+  color: var(--almost-black);
+}
+
+.sojo {
+  color: #61DAFB;
+  font-weight: bold;
+}
