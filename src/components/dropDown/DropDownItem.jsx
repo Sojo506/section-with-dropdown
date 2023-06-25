@@ -3,16 +3,6 @@ import icon_arrow_up from "../../assets/icon-arrow-up.svg";
 import icon_arrow_down from "../../assets/icon-arrow-down.svg";
 
 const DropDownItem = ({ option, optionItems, isActive, onToggle }) => {
-  function handleActiveItem(event) {
-    const activeElements = document.querySelectorAll(`.${styles.active}`);
-
-    activeElements.forEach((element) => {
-      element.classList.remove(styles.active);
-    });
-
-    event.target.classList.add(styles.active);
-  }
-
   return (
     <div
       className={`${styles.dropdown} ${
@@ -39,7 +29,6 @@ const DropDownItem = ({ option, optionItems, isActive, onToggle }) => {
               className={`${styles.menu__item} ${
                 item.active ? styles.active : ""
               }`}
-              onClick={handleActiveItem}
             >
               {item.image && <img src={item.image} alt={`icon ${item.name}`} />}
               <span>{item.name}</span>
